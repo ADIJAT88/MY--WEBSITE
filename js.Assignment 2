@@ -1,0 +1,11 @@
+const year = 2026;
+const currentYear = new Date().getFullYear();  // gets current year dynamically
+
+if (year < currentYear) {
+  console.log(year + " is a past year.");
+} else if (year === currentYear) {
+  console.log(year + " is the current year!");
+} else {
+  console.log(year + " is a future year.");
+}
+// Output: "2026 is the current year!"
