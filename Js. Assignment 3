@@ -1,0 +1,69 @@
+// --- Functions ---
+
+function greetUser(name) {
+    console.log(`Hello, ${name}! Welcome to the calculator.`);
+}
+
+function add(x, y) {
+    return x + y;
+}
+
+function subtract(x, y) {
+    return x - y;
+}
+
+function multiply(x, y) {
+    return x * y;
+}
+
+function divide(x, y) {
+    if (y === 0) {
+        return "Error! Division by zero.";
+    }
+    return x / y;
+}
+
+// --- Main Program Flow ---
+
+// 1. Initial Greetings
+console.log("--- Initializing Greetings ---");
+greetUser("ADIJAT");
+greetUser("MICHEAL");
+greetUser("NICHOLAS");
+greetUser("ADEDEJI");
+greetUser("KEHINDE");
+greetUser("YUSUF");
+greetUser("MUSTAPHA");
+console.log("-------------------------------\n");
+
+// 2. Mocking user input for demonstration
+// (In JS, we often pre-define variables or use prompt() in the browser)
+let choice = "1"; // Change this to '1', '2', '3', or '4' to test different operations
+let num1 = 10;
+let num2 = 5;
+
+console.log(`Selected operation: ${choice}`);
+console.log(`Numbers: ${num1} and ${num2}`);
+
+// 3. Implementing the switch (true) pattern
+switch (true) {
+    case (choice === '1'):
+        console.log(`Result: ${add(num1, num2)}`);
+        break;
+        
+    case (choice === '2'):
+        console.log(`Result: ${subtract(num1, num2)}`);
+        break;
+        
+    case (choice === '3'):
+        console.log(`Result: ${multiply(num1, num2)}`);
+        break;
+        
+    case (choice === '4'):
+        console.log(`Result: ${divide(num1, num2)}`);
+        break;
+        
+    default:
+        console.log("Invalid Input. Please select 1, 2, 3, or 4.");
+        break;
+}

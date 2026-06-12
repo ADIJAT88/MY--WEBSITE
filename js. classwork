@@ -1,0 +1,7 @@
+function addFivePlusFive(number) {
+    console.log(5 +parseInt( '${num}') + 5) ;
+}
+
+//
+addFivePlusFive("25");
+console.log("The result is:", result); // 

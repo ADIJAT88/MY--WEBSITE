@@ -1,0 +1,3 @@
+const addFivePlusFive  =  () =. {
+    console.log(5 + parseInt('$ {}))
+}
